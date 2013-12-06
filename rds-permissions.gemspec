@@ -6,8 +6,8 @@ require 'rds/permissions/version'
 Gem::Specification.new do |gem|
   gem.authors       = ["Jo"]
   gem.email         = ["jo@smartsoftasia.com"]
-  gem.description   = %q{ RDS permissions gem}
-  gem.summary       = %q{ RDS permissions gem }
+  gem.description   = "RDS permissions gem"
+  gem.summary       = "RDS permissions gem"
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
