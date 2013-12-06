@@ -1,4 +1,4 @@
-# Rds/permissions
+# rds-permissions
 
 TODO: Write a gem description
 
@@ -19,10 +19,11 @@ Or install it yourself as:
 ## Usage
 
 
-# Create rails initializer (permissions.rb)
+#### Create rails initializer (permissions.rb)
 
-- config api endpoint
-Rds::Permissions::Config.api_endpoint = "http://rds-users.smartsoftasia.com/api/v1/authorization/authorize"
+config api endpoint by adding this line:
+
+    Rds::Permissions::Config.api_endpoint = "http://rds-users.smartsoftasia.com/api/v1/authorization/authorize"
 
 
 
