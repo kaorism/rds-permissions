@@ -25,6 +25,23 @@ config api endpoint by adding this line:
 
     Rds::Permissions::Config.api_endpoint = "http://rds-users.smartsoftasia.com/api/v1/authorization/authorize"
 
+Include rds-permissions in ActionController :
+
+    include Rds::Permissions
+
+In action methods :
+    
+    def show
+      require_permissions!( :users_read )
+    end
+
+or:
+
+    def show
+      if require_permissions?( :users_read, :users_manage )
+        ..do something...
+      end
+    end
 
 
 
