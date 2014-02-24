@@ -16,4 +16,13 @@ Gem::Specification.new do |gem|
   gem.name          = "rds-permissions"
   gem.require_paths = ["lib"]
   gem.version       = Rds::Permissions::VERSION
+  
+  gem.add_runtime_dependency 'rails', '>= 4.0'
+
+  gem.add_development_dependency "bundler", "~> 1.3"
+  gem.add_development_dependency "rake"
+  gem.add_development_dependency "rspec"
+  gem.add_development_dependency "rspec-rails"
+  gem.add_development_dependency "pg"
+  gem.add_development_dependency 'rails-api'
 end
